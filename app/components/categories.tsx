@@ -5,6 +5,7 @@ import { BsSmartwatch } from "react-icons/bs";
 import { MdOutlineCameraAlt } from "react-icons/md";
 import { PiHeadphonesLight } from "react-icons/pi";
 import { MdOutlineVideogameAsset } from "react-icons/md";
+import { FaLaptop } from "react-icons/fa"; // Laptop icon
 
 const Categories = () => {
     return (
@@ -15,42 +16,54 @@ const Categories = () => {
                         <div className='w-[20px] h-[70px] bg-[#DB4444] rounded-md'></div>
                         <h1 className='text-2xl text-[#DB4444]'>Categories</h1>
                     </div>
-                    <div className='flex  gap-12 py-6  md:text-2xl font-bold'>
-                    <h1>Browse By Category</h1>
+                    <div className='flex gap-12 py-6 md:text-2xl font-bold'>
+                        <h1>Browse By Category</h1>
                     </div>
 
-                    <div  className='flex items-center gap-4 flex-wrap'>
-                        <div className='w-full md:w-[230px] h-[200px]  rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300'>
-                        <MdPhoneAndroid size={36}/>
-                       <p>Phones</p>
+                    {/* Grid for the cards */}
+                    <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-7 gap-4'>
+                        {/* Phones Card */}
+                        <div className='w-full h-[200px] rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-[#DB4444] hover:text-white'>
+                            <MdPhoneAndroid size={36} />
+                            <p>Phones</p>
                         </div>
-                        <div className='w-full md:w-[230px] h-[200px]  rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300'>
-                        <HiOutlineDesktopComputer size={36}/>
-                       <p>Computers</p>
+                        {/* Computers Card */}
+                        <div className='w-full h-[200px] rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-[#DB4444] hover:text-white'>
+                            <HiOutlineDesktopComputer size={36} />
+                            <p>Computers</p>
                         </div>
-                        <div className='w-full md:w-[230px] h-[200px]  rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300'>
-                        <BsSmartwatch size={36}/>
-                       <p>SmartWatch</p>
+                        {/* SmartWatch Card */}
+                        <div className='w-full h-[200px] rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-[#DB4444] hover:text-white'>
+                            <BsSmartwatch size={36} />
+                            <p>SmartWatch</p>
                         </div>
-                        <div className='w-full md:w-[230px] h-[200px]  rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300'>
-                        <MdOutlineCameraAlt size={36}/>
-                       <p>Camera</p>
+                        {/* Camera Card */}
+                        <div className='w-full h-[200px] rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300 transition-transform transform hover:scale-105 hover:shadow-lg bg-[#DB4444] text-white'>
+                            <MdOutlineCameraAlt size={36} />
+                            <p>Camera</p>
                         </div>
-                        <div className='w-full md:w-[230px] h-[200px]  rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300'>
-                        <PiHeadphonesLight size={36}/> 
-                       <p>HeadPhones</p>
+                        {/* HeadPhones Card */}
+                        <div className='w-full h-[200px] rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-[#DB4444] hover:text-white'>
+                            <PiHeadphonesLight size={36} />
+                            <p>HeadPhones</p>
                         </div>
-                        <div className='w-full md:w-[230px] h-[200px]  rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300'>
-                        <MdOutlineVideogameAsset size={36}/>
-                       <p>Gaming</p>
+                        {/* Gaming Card */}
+                        <div className='w-full h-[200px] rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-[#DB4444] hover:text-white'>
+                            <MdOutlineVideogameAsset size={36} />
+                            <p>Gaming</p>
                         </div>
-
+                        {/* Laptops Card */}
+                        <div className='w-full h-[200px] rounded-md p-4 flex flex-col items-center justify-center gap-4 border border-gray-300 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-[#DB4444] hover:text-white'>
+                            <FaLaptop size={36} />
+                            <p>Laptops</p>
+                        </div>
                     </div>
-                    <hr className='my-12'/>
+
+                    <hr className='my-12' />
                 </div>
             </section>
         </>
     )
 }
 
-export default Categories
+export default Categories;

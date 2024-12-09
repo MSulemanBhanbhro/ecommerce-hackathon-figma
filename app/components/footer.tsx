@@ -37,8 +37,8 @@ const Footer = () => {
             {/* Accounts Section */}
             <div className="text-white w-full md:w-auto">
               <h1 className="text-lg md:text-xl font-bold">Accounts</h1>
-              <h1 className="py-2"><Link href={'/'}>My Account</Link></h1>
-              <h1 className="py-2"><Link href={'/'}>Login/Register</Link></h1>
+              <h1 className="py-2"><Link href={'/'}>New Arrivals</Link></h1>
+              <h1 className="py-2"><Link href={'/'}>Best sellers</Link></h1>
               <h1 className="py-2"><Link href={'/'}>Cart</Link></h1>
               <h1 className="py-2"><Link href={'/'}>WishList</Link></h1>
               <h1 className="py-2"><Link href={'/'}>Shop</Link></h1>

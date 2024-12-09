@@ -1,8 +1,14 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { GoArrowRight } from "react-icons/go";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const Hero = () => {
   return (
@@ -48,8 +54,8 @@ const Hero = () => {
                 <p className="text-white text-lg md:text-xl">iPhone 14 series</p>
               </div>
               <div className="px-6 md:px-[80px] pt-4 md:pt-[20px]">
-                <h2 className="text-4xl md:text-6xl text-white tracking-wide leading-tight">
-                  Up to 10% <br /> off Voucher
+                <h2 className="text-4xl md:text-2xl text-white tracking-wide leading-tight">
+                  Up to 10%  off Voucher
                 </h2>
               </div>
               <div className="px-6 md:px-[80px] py-4 md:py-[20px]">
@@ -64,15 +70,48 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Right Content */}
-            <div className="w-full md:w-1/2 ">
-              <Image
-                src="/images/hero.png"
-                width={350}
-                height={350}
-                alt="hero"
-                className="object-contain"
-              />
+            {/* Right Content with Slider */}
+            <div className="w-full md:w-1/2">
+              <Swiper
+                pagination={{
+                  dynamicBullets: true,
+                }}
+                modules={[Pagination, Autoplay]} // Add Autoplay for automatic slide change
+                loop={true}
+                autoplay={{
+                  delay: 3000, // 3-second delay
+                  disableOnInteraction: false,
+                }}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <Image
+                    src="/images/hero.png"
+                    width={350}
+                    height={350}
+                    alt="hero"
+                    className="object-contain"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/images/iphone.png"
+                    width={350}
+                    height={350}
+                    alt="woman"
+                    className="object-contain"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/images/iphones.png"
+                    width={350}
+                    height={350}
+                    alt="bag"
+                    className="object-contain"
+                  />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>
