@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Section */}
-          <div className="w-full md:w-[70em] border-2 border-black h-auto md:h-[370px] mt-6 bg-black flex  md:flex-nowrap items-center gap-8 md:gap-20 p-4 md:p-0">
+          <div className="w-full md:w-[70em] border-2 border-black h-auto md:h-[370px] mt-6 bg-black flex flex-col md:flex-row items-center gap-8 md:gap-20 p-4 md:p-0">
             {/* Left Content */}
             <div className="w-full md:w-1/2">
               <div className="flex items-center gap-4 md:gap-10 px-6 md:px-[70px] pt-6 md:pt-12">
@@ -55,7 +55,7 @@ const Hero = () => {
               </div>
               <div className="px-6 md:px-[80px] pt-4 md:pt-[20px]">
                 <h2 className="text-4xl md:text-2xl text-white tracking-wide leading-tight">
-                  Up to 10%  off Voucher
+                  Up to 10% off Voucher
                 </h2>
               </div>
               <div className="px-6 md:px-[80px] py-4 md:py-[20px]">
@@ -71,18 +71,18 @@ const Hero = () => {
             </div>
 
             {/* Right Content with Slider */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 flex justify-center items-center">
               <Swiper
                 pagination={{
                   dynamicBullets: true,
                 }}
-                modules={[Pagination, Autoplay]} // Add Autoplay for automatic slide change
+                modules={[Pagination, Autoplay]}
                 loop={true}
                 autoplay={{
-                  delay: 3000, // 3-second delay
+                  delay: 3000,
                   disableOnInteraction: false,
                 }}
-                className="mySwiper"
+                className="w-full h-full"
               >
                 <SwiperSlide>
                   <Image
@@ -114,6 +114,7 @@ const Hero = () => {
               </Swiper>
             </div>
           </div>
+
         </div>
       </section>
     </>
