@@ -21,20 +21,20 @@ const Hero = () => {
             <ul className="text-lg md:text-xl space-y-3 md:space-y-4">
               <li>
                 <Link href="/" className="flex items-center justify-between">
-                  Woman's Fashion <MdKeyboardArrowRight size={24} />
+                  Woman&rsquo;s Fashion <MdKeyboardArrowRight size={24} />
                 </Link>
               </li>
               <li>
                 <Link href="/" className="flex items-center justify-between">
-                  Men's Fashion <MdKeyboardArrowRight size={24} />
+                  Men&rsquo;s Fashion <MdKeyboardArrowRight size={24} />
                 </Link>
               </li>
               <li><Link href="/">Electronics</Link></li>
               <li><Link href="/">Home & Lifestyle</Link></li>
               <li><Link href="/">Medicine</Link></li>
-              <li><Link href="/">Sport's & Outdoor</Link></li>
-              <li><Link href="/">Baby's & Toy's</Link></li>
-              <li><Link href="/">Accessories & Pet's</Link></li>
+              <li><Link href="/">Sport&rsquo;s & Outdoor</Link></li>
+              <li><Link href="/">Baby&rsquo;s & Toy&rsquo;s</Link></li>
+              <li><Link href="/">Accessories & Pet&rsquo;s</Link></li>
               <li><Link href="/">Health & Beauty</Link></li>
             </ul>
           </div>

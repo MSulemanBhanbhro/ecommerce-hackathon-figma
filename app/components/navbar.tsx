@@ -27,7 +27,7 @@ const Navbar = () => {
     setUserDropdownOpen(!userDropdownOpen);
   };
 
-  const handleLanguageSelect = (language:any) => {
+  const handleLanguageSelect = (language: string) => {
     setSelectedLanguage(language);
     setLanguageDropdownOpen(false);
   };

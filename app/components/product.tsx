@@ -11,7 +11,7 @@ const Product = () => {
                 <div className='px-6 md:px-12 py-12'>
                     <div className='flex items-center gap-4 '>
                         <div className='w-[20px] h-[70px] bg-[#DB4444] rounded-md'></div>
-                        <h1 className='text-2xl text-[#DB4444]'>Today's</h1>
+                        <h1 className='text-2xl text-[#DB4444]'>Today&rsquo;s</h1>
                     </div>
 
                     <div className='flex  gap-12 py-6  md:text-2xl font-bold'>
