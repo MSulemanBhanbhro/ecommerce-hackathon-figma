@@ -15,7 +15,7 @@ const Hero = () => {
     <>
       <section className="w-full">
         <hr />
-        <div className="px-6 md:px-12 w-full flex flex-wrap justify-between gap-8 md:gap-16">
+        <div className="px-6 md:px-12 w-full flex  justify-between gap-8 md:gap-16">
           {/* Sidebar */}
           <div className="border-r border-gray-300 w-full md:w-1/5 pt-6">
             <ul className="text-lg md:text-xl space-y-3 md:space-y-4">
